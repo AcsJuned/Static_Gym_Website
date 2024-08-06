@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import MembershipPlans from './Components/MembershipPlans/MembershipPlans';
+import NavBar from './Components/NavBar/NavBar';
+import RegisterSection from './Components/RegisterSection/RegisterSection';
+import UnlimitedClasses from './Components/UnlimitedClasses/UnlimitedClasses';
+import WhatsAppButton from './Components/WhatsAppButton/WhatsAppButton';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <NavBar/>
+    <RegisterSection/>
+    <MembershipPlans/>
+    <WhatsAppButton/>
+    <UnlimitedClasses/>
+    
     </div>
   );
 }

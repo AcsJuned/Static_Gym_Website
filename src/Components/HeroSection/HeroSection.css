@@ -1,0 +1,69 @@
+.hero-section { 
+   
+.formcontainer{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+  }
+  .maintext{
+    padding-top: 160px;
+  }
+  
+  .hero-text span {
+    font-size: 30px;
+    padding-right: 10px;
+    color: #f15d44;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    
+  }
+  
+  .hero-text h1 {
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 11px;
+    margin-bottom: 18px;
+  }
+  
+  .hero-text p {
+    color: #ffffff;
+    margin-bottom: 44px;
+  }
+  
+  .primary-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    background: linear-gradient(to right, #eb3c5a, #f67831);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+  }
+  
+  .primary-btn:hover {
+    background: linear-gradient(to right, #f67831, #eb3c5a);
+  }
+  
+  .primary-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .primary-btn:hover::after {
+    opacity: 0.9;
+  }
+  
