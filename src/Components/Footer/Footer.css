@@ -1,0 +1,122 @@
+.ACS-footer-footer {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.ACS-footer-footer-top {
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  margin-top: -25px;
+  margin-bottom: 70px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  flex-wrap: wrap;
+}
+
+.ACS-footer-footer-item {
+  text-align: center;
+  flex-basis: 100%;
+  margin-bottom: 10px;
+}
+
+.ACS-footer-footer-label {
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.ACS-footer-footer-label::before, .footer-label::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+
+.ACS-footer-footer-label::before {
+  left: -110%;
+}
+
+.ACS-footer-footer-label::after {
+  right: -110%;
+}
+
+.ACS-footer-footer-value {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.ACS-footer-footer-middle {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.ACS-footer-footer-contact, .ACS-footer-footer-connect, .ACS-footer-footer-services, .ACS-footer-footer-ventures {
+  text-align: left;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.ACS-footer-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #fff;
+  flex-wrap: wrap;
+}
+
+.ACS-footer-footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.ACS-footer-footer-nav button {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.ACS-footer-footer-nav button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.ACS-footer-footer-info {
+  font-size: 12px;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  .ACS-footer-footer-top, .ACS-footer-footer-middle {
+    flex-direction: row;
+  }
+
+  .ACS-footer-footer-item, .ACS-footer-footer-contact, .ACS-footer-footer-connect, .ACS-footer-footer-services, .ACS-footer-footer-ventures {
+    flex-basis: 24%;
+    margin-bottom: 0;
+  }
+
+  .ACS-footer-footer-nav, .ACS-footer-footer-info {
+    flex-basis: 50%;
+  }
+}

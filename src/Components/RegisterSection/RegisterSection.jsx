@@ -5,14 +5,14 @@ import Registerpic from "../../Assets/register-pic.jpg";
 
 const RegisterSection = () => {
   return (
-    <section className="register-section spad mt-1">
-      <div className="container ">
-        <div className="row">
+    <section className="register-section bg-white ">
+      <div className="container membership-item mt-3  rounded ">
+        <div className="row p-5">
           <div className="col-lg-8">
             <div className="register-text">
               <div className="section-title">
                 <h2>Register Now</h2>
-                <p>The First 7 Day Trial Is Completely Free With The Teacher</p>
+                <p className='mt-3'>The First 7 Day Trial Is Completely Free With The Teacher</p>
               </div>
               <form action="#" className="register-form">
                 <div className="row">
@@ -41,7 +41,7 @@ const RegisterSection = () => {
           </div>
           <div className="col-lg-4">
             <div className="register-pic">
-              <img src={Registerpic} alt="Registration" className="img-fluid card" />
+              <img src={Registerpic} alt="Registration" className="img-fluid card rounded border border-danger" />
             </div>
           </div>
         </div>

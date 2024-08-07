@@ -1,33 +1,8 @@
-.header-section {
+/* Existing styles */
+.containerN {
+  height: 0;
   position: relative;
-  background-color: transparent;
-  background-image: url("../../Assets/peakpx.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 800px;
-  overflow: hidden;
 }
-
-.container{
-  margin-top: 30px;
-}
-
-.header-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.header-section .container {
-  position: relative;
-  z-index: 2;
-}
-
 
 .nav-menu .nav-link {
   color: #ffffff;
@@ -36,8 +11,6 @@
   font-size: 20px;
   width: 100%;
   text-decoration: none;
-  transition: border-bottom 0.3s ease;
-
 }
 
 .nav-menu .nav-link:hover {
@@ -48,57 +21,73 @@
 .signup-btn {
   border: 1px solid rgb(255, 55, 0);
   background-color: transparent !important;
-  color: #ffffff; 
+  color: #ffffff;
   transition: background-color 0.3s ease;
   font-family: 'Poppins' !important;
-  padding: 16px 16px !important;
   font-size: 20px;
 }
 
 .signup-btn:hover {
-  background-color: rgb(255, 55, 0);;
+  background-color: rgb(255, 55, 0);
   color: #ffffff;
 }
 
-
-/* Existing styles... */
-
+/* Offcanvas Menu & Button Styles for Small Screens */
 @media (max-width: 767px) {
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    width: 24px;
+    height: 24px;
+  }
+
   .navbar-nav .nav-item {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .navbar-nav .nav-link {
-    color: #ffffff !important;
+    color: #ff3700 !important;
     padding: 15px 0;
+    font-size: 18px;
   }
 
   .navbar-nav .nav-link:hover {
     color: #ff3700 !important;
   }
-  
-  .collapse {
-    display: block !important;
+
+  .offcanvas-title {
+    color: #ff3700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
   }
 
-  .navbar-nav {
-    text-align: center;
+  .offcanvas-body {
+    background-color: #000;
   }
 
-  .header-section {
-    height: auto;
+  .offcanvas-backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
   }
+
+  .offcanvas .nav-link {
+    color: #ffffff !important;
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
   .signup-btn {
     border: 1px solid rgb(255, 55, 0);
     background-color: transparent !important;
-    color: #ffffff; 
+    color: #ffffff;
     transition: background-color 0.3s ease;
     font-family: 'Poppins' !important;
     padding: 16px 16px !important;
     font-size: 20px;
   }
+
   .signup-btn:hover {
-    background-color: rgb(255, 55, 0);;
+    background-color: rgb(255, 55, 0);
     color: #ffffff;
   }
 }

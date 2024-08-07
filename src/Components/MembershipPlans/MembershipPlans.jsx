@@ -3,7 +3,7 @@ import './MembershipPlans.css';
 
 const MembershipPlans = () => {
   return (
-    <section className="membership-section spad">
+    <section className="membership-section ">
       <div className="container mainCardC">
         <div className="row">
           <div className="col-lg-12">

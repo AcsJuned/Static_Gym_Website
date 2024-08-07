@@ -55,7 +55,7 @@ const UnlimitedClasses = () => {
   const rightToLeftClasses = classes.slice(4,8);
 
   return (
-    <section className="classes-section spad">
+    <section className="classes-section  spad">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
