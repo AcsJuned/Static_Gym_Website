@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import HeroSection from "./Components/HeroSection/HeroSection";
-import Popup from './Popup'; // Import your Popup component
+import Popup from './Popup'; 
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setShowPopup(true);
-    }, 60000); // Show popup every 60 seconds
+    }, 60000); 
 
     return () => clearInterval(intervalId);
   }, []);
@@ -36,7 +36,7 @@ function App() {
       <UnlimitedClasses />
       <AboutSection />
       <Footer />
-      <Popup show={showPopup} handleClose={handleClosePopup} /> {/* Add Popup here */}
+      <Popup show={showPopup} handleClose={handleClosePopup} /> 
     </div>
   );
 }
